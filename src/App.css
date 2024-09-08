@@ -1,0 +1,159 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #ffafbd, #ffc3a0);
+    font-family: 'Courier New', Courier, monospace;
+  }
+  
+  .App {
+    text-align: center;
+    margin: 50px auto 0px;
+    width: 90%;
+    max-width: 700px;
+    border-radius: 20px;
+    height: 470px;
+    padding: 20px 15px;
+    background: #fdf3f0; /* A lighter background for content */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border: 2px solid #ff6f61;
+  }
+  
+  .search-engine {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 30px;
+    margin-top: 10px;
+  }
+  
+  .search-engine input {
+    width: 70%;
+    height: 45px;
+    border: 2px solid #ff6f61;
+    border-radius: 10px;
+    padding: 5px 15px;
+    font-size: 18px;
+    outline: none;
+    background-color: #ffe066;
+    color: #383e56;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .search-engine input:hover {
+    border-color: #f25c54;
+  }
+  
+  .search-engine button {
+    border: none;
+    border-radius: 10px;
+    background-color: #ff6f61;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 10px 30px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .search-engine button:hover {
+    background-color: #d64550;
+  }
+  
+  .city-name {
+    margin-bottom: 10px;
+    font-family: 'Georgia', serif;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #383e56;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  
+  .loading {
+    font-size: 60px;
+    font-weight: bolder;
+    color: #d64550;
+  }
+  
+  .date {
+    font-size: 20px;
+    font-weight: 500;
+    font-style: italic;
+    color: #383e56;
+  }
+  
+  .temp {
+    font-size: 64px;
+    color: #383e56;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 2px 2px 0px #f25c54;
+  }
+  
+  .description {
+    color: #383e56;
+    font-size: 22px;
+    font-weight: 500;
+    margin-top: 0px;
+    margin-bottom: 20px;
+  }
+  
+  .weather-info {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 20px;
+    padding: 0px 20px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: #383e56;
+  }
+  
+  .column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .weather-info div {
+    background-color: #fdf3f0;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ff6f61;
+  }
+  
+  /* Retro Ripple Animation */
+  @keyframes ripple {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.05);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  .temp {
+    animation: ripple 3s infinite;
+  }
+  
+  /* Hover Animations */
+  input, button {
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .search-engine input:focus {
+    box-shadow: 0 0 8px #ff6f61;
+  }
+  
+  .search-engine button:hover {
+    box-shadow: 0 0 10px rgba(255, 111, 97, 0.5);
+  }
+  
+  
+  
+  
